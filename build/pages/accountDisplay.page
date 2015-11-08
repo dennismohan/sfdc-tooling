@@ -1,0 +1,22 @@
+<apex:page controller="AccountHandler">
+    <!--<apex:detail/>
+    <apex:relatedList list="Cases" />
+	<apex:pageBlock title="Custom Output">
+    	<apex:pageBlockSection title="Custom Section Title">
+        	<apex:outputField value="{!account.Name}"/>
+        	<apex:outputField value="{!account.Owner.Name}"/>
+		</apex:pageBlockSection>
+	</apex:pageBlock>
+	-->
+	<br/>
+
+	<p>Hello World</p>
+	<script type="text/javascript">
+		console.log('Hello World');
+	</script>
+
+	<div id="Tags">
+		<p></p>
+		<section></section>
+	</div>
+</apex:page>
