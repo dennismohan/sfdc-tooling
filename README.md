@@ -18,5 +18,24 @@ If we will want to write our own JSForce we will need to use two APIs:
 - [REST API](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/#StartTopic=Content/quickstart.htm)
 - [Tooling API](https://developer.salesforce.com/docs/atlas.en-us.api_tooling.meta/api_tooling/)
 
+### Create Pages JSON:
+Request type: POST
+URL: https://xx.salesforce.com/services/data/vxx/tooling/sobjects/ApexPage/
+
+{
+      "Name": "TestPage",
+      "MasterLabel": "TestPage",
+      "Markup": "<apex:page><p>Hello World</p></apex:page>"
+}
+
+### Update Pages JSON:
+Request type: PATCH
+URL: https://xx.salesforce.com/services/data/vxx/tooling/sobjects/ApexPage/Id
+{
+      "Name": "TestPage",
+      "MasterLabel": "TestPage",
+      "Markup": "<apex:page><p>Hello World</p></apex:page>"
+}
+
 ### Technical Issues:
 - How to create files when grunt-watch is running?
