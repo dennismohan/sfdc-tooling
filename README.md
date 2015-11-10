@@ -17,7 +17,7 @@ If we will want to write our own JSForce we will need to use two APIs:
 - [SOAP API](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_calls_login.htm)
 - [REST API](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/#StartTopic=Content/quickstart.htm)
 - [Tooling API](https://developer.salesforce.com/docs/atlas.en-us.api_tooling.meta/api_tooling/)
-
+- [JSON Packaging](https://developer.salesforce.com/blogs/developer-relations/2013/01/new-in-spring-13-the-tooling-api.html)
 ### Create Pages JSON:
 Request type: POST
 URL: https://xx.salesforce.com/services/data/vxx/tooling/sobjects/ApexPage/
