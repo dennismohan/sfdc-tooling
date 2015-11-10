@@ -28,6 +28,20 @@ URL: https://xx.salesforce.com/services/data/vxx/tooling/sobjects/ApexPage/
       "Markup": "<apex:page><p>Hello World</p></apex:page>"
 }
 
+Return:{ "id": 0010010123, "success": true, "errors": []}
+Status: 201 Created
+
+### Create Class JSON:
+Request type: POST
+URL: https://xx.salesforce.com/services/data/vxx/tooling/sobjects/ApexPage/
+
+{
+      "Name": "TestPage",
+      "Body": "public class TestClass { public static final Integer x = 1; }"
+}
+
+Return:{ "id": 0010010123, "success": true, "errors": []}
+Status: 201 Created
 ### Update Pages JSON:
 Request type: PATCH
 URL: https://xx.salesforce.com/services/data/vxx/tooling/sobjects/ApexPage/Id
