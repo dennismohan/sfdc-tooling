@@ -33,7 +33,7 @@ Status: 201 Created
 
 ### Create Class JSON:
 Request type: POST
-URL: https://xx.salesforce.com/services/data/vxx/tooling/sobjects/ApexPage/
+URL: https://xx.salesforce.com/services/data/vxx.x/tooling/sobjects/ApexPage/
 
 {
       "Name": "TestPage",
@@ -42,6 +42,21 @@ URL: https://xx.salesforce.com/services/data/vxx/tooling/sobjects/ApexPage/
 
 Return:{ "id": 0010010123, "success": true, "errors": []}
 Status: 201 Created
+
+### Create Trigger JSON:
+Request type: POST
+URL: https://xxxx.salesforce.com/services/data/vxx.x/tooling/sobjects/ApexTrigger/
+
+{
+    "Name" : "AccountTrigger",
+    "TableEnumOrId" : "Account",
+    "Body" : "trigger AccountTrigger on Account (before insert){}"
+}
+
+Return: {  "id": "01q370000005ucbAAA", "success": true,  "errors": [] }
+Status: 201 Created
+
+
 ### Update Pages JSON:
 Request type: PATCH
 URL: https://xx.salesforce.com/services/data/vxx/tooling/sobjects/ApexPage/Id
